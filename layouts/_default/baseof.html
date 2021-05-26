@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  {{ $title := delimit (slice .Title "&middot;" .Site.Title) " " }}
+  <title>{{ $title }}</title>
+  <meta charset="utf-8">
+  <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <a href="/">{{ .Site.Title }}</a>
+    </header>
+
+    {{ partial "menu" . }}
+    
+    {{ block "main" . }}
+
+    {{ end }}
+
+    <footer>
+    {{ block "footer" . }}
+
+    {{ end }}
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+---
+title: "Über dieses Projekt"
+date: 2021-05-26T20:29:51+02:00
+draft: false
+menu: secondary
+---
+
+Auch im Jahr {{< year >}} ist Kartenzahlung in deutschen Geschäften und Restaurants keine Selbstverständlichkeit. Ich sammele hier Informationen, wo Kartenzahlung akzeptiert wird und ob es dabei lästige Einschränkungen gibt – wie z. B. „Nur Girocard“ oder „ab 10 €“.
+
+Diese Seite wurde mit einfachsten Mitteln erstellt und dient in erster Linie meiner eigenen Dokumentation. In der Hoffnung, dass diese Informationen auch anderen helfen, habe ich sie öffentlich gemacht.
+
+Sie ist zunächst auf Bremen beschränkt, aber bei positiver Resonanz bin ich für eine Erweiterung auf andere Städte offen.
+
+**Korrekturen und Ergänzungen könnt ihr mir gerne als [Pull Request bei GitHub](https://github.com/aaronk6) übermitteln oder ansonsten auch einfach [per E-Mail](mailto:aaron@bremen-ohne-bargeld.de).**

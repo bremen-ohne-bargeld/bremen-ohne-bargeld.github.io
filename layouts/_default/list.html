@@ -1,0 +1,13 @@
+{{ define "main" }}
+  {{ .Content }}
+
+  <ul class="places">
+    {{ range .Pages }}
+        <li class="payment-status payment-status-{{ .Params.payment_status }}">
+            <a href="{{.Permalink}}">{{.Title}}</a>
+        </li>
+    {{ end }}
+  </ul>
+
+  
+{{ end }}
