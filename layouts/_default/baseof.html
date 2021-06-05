@@ -4,7 +4,8 @@
   {{ $title := delimit (slice .Title "&middot;" .Site.Title) " " }}
   <title>{{ $title }}</title>
   <meta charset="utf-8">
-  <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet">
+  {{ $style := resources.Get "style.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
   <link rel="canonical" href="{{ .Permalink }}">
   {{ if .Params.noindex }}
   <meta name="robots" content="noindex"> 
