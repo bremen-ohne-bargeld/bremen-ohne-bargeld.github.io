@@ -1,9 +1,21 @@
 {{ define "main" }}
-  {{ .Content }}
+{{ .Content }}
 
-  <ul class="places">
-    {{ range .Pages }}
-        <li class="payment-status payment-status-{{ .Params.payment_status }}">
+
+<ul class="places">
+  {{ range .Pages }}
+        
+        {{ if eq .Params.payment_status 0 }}
+          {{ .Scratch.Set "payment_status_title" "Hier kann leider nicht mit Karte bezahlt werden." }}
+        {{ else if eq .Params.payment_status 1 }}
+          {{ .Scratch.Set "payment_status_title" "Hier kann möglicherweise mit Karte bezahlt werden (Einschränkungen beachten)." }}
+        {{ else if eq .Params.payment_status 2 }}
+          {{ .Scratch.Set "payment_status_title" "Hier kann problemslos mit Karte bezahlt werden." }}
+        {{ else }}
+          {{ .Scratch.Set "payment_status_title" "Unbekannter Status" }}
+        {{ end }}
+
+        <li class="payment-status payment-status-{{ .Params.payment_status }}" title="{{ .Scratch.Get "payment_status_title" }}">
             <a href="{{.Permalink}}">{{.Title}}</a>
         </li>
     {{ end }}
