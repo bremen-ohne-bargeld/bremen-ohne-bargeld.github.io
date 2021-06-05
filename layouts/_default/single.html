@@ -4,8 +4,10 @@
   
   {{.Content}}
 
-<div class="google-link-container">
-  <a target="_blank" href="https://www.google.com/maps/place/?q=place_id:{{ .Params.place_id }}">Bei Google anzeigen</a>
-</div>
+  {{ if .Params.place_id }}
+    <div class="google-link-container">
+      <a target="_blank" href="https://www.google.com/maps/place/?q=place_id:{{ .Params.place_id }}">Bei Google anzeigen</a>
+    </div>
+  {{ end }}
 
 {{ end }}
