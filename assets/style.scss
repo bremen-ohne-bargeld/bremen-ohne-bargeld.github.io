@@ -28,11 +28,11 @@ ul, li {
 
 nav {
     text-align: center;
-}
 
-nav li {
-    display: inline-block;
-    margin: 0 10px;
+    li {
+        display: inline-block;
+        margin: 0 10px;
+    }
 }
 
 .places {
@@ -46,16 +46,8 @@ nav li {
     height: 8px;
     border-radius: 4px;
     background-color: #999;
+
+    .payment-status-0:before { background-color: #EC4E27; }
+    .payment-status-1:before { background-color: #F6C744; }
+    .payment-status-2:before { background-color: #9BD851; }   
  }
-
-.payment-status-0:before {
-    background-color: #EC4E27;
-}
-
-.payment-status-1:before {
-    background-color: #F6C744;
-}
-
-.payment-status-2:before {
-    background-color: #9BD851;    
-}
