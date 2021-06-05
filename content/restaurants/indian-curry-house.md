@@ -5,7 +5,7 @@ place_id: ChIJke97Qv0nsUcRthxvoBbZJbo
 payment_status: 1
 ---
 
-An der Tür hängt ein Schild mit der Aufschrit:
+An der Tür hängt ein Schild mit der Aufschrift:
 
 „Bei EC- und Kreditkartenzahlungen unter 20 € erheben wir 0,50 € Gebühr.“
 
