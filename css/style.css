@@ -1,0 +1,53 @@
+body {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.places {
+    list-style-type: none;
+}
+
+.payment-status:before{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #999;
+ }
+
+.payment-status-0:before {
+    background-color: #EC4E27;
+}
+
+.payment-status-1:before {
+    background-color: #F6C744;
+}
+
+.payment-status-2:before {
+    background-color: #9BD851;    
+}
