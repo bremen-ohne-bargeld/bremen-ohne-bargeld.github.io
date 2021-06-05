@@ -11,6 +11,14 @@ header {
 a {
     color: #000;
     text-decoration: none;
+
+    &:hover {
+        opacity: .7;
+    }
+}
+
+.page a {
+    text-decoration: underline;
 }
 
 ul, li {

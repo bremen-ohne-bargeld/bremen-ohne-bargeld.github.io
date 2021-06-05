@@ -18,9 +18,11 @@
 
     {{ partial "menu" . }}
     
+    <div class="page">
     {{ block "main" . }}
 
     {{ end }}
+    </div>
 
     <footer>
     {{ block "footer" . }}
