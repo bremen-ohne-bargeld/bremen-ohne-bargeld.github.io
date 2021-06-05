@@ -13,10 +13,11 @@
 </head>
 <body>
     <header>
-      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+      <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+
+      {{ partial "menu" . }}
     </header>
 
-    {{ partial "menu" . }}
     
     <div class="page">
     {{ block "main" . }}

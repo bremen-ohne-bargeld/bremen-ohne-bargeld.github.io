@@ -1,17 +1,36 @@
 @import "normalize";
 @import "sticky-footer";
+
+$default-text-color: #222;
+
 body {
-    font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+    font-family: system-ui;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: $default-text-color;
 }
 
 header {
     text-align: center;
-    padding: 20px;
-    font-size: 24px;
+    margin: 40px;
+    
+    .site-title {
+        padding: 20px;
+        font-size: 24px;
+    }
+
+    nav {
+        margin: 20px 0;
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    }
 }
 
 a {
-    color: #000;
+    color: $default-text-color;
     text-decoration: none;
 
     &:hover {
@@ -19,8 +38,16 @@ a {
     }
 }
 
+.page {
+    margin: 40px auto;
+    width: 100%;
+    max-width: 800px;
+    line-height: 1.5em;
+}
+
 .page a {
     text-decoration: underline;
+    color: #39f;
 }
 
 ul, li {
@@ -28,26 +55,28 @@ ul, li {
     padding: 0;
 }
 
-nav {
-    text-align: center;
-
-    li {
-        display: inline-block;
-        margin: 0 10px;
+.places {
+    list-style-type: none;
+    
+    a {
+        text-decoration: none;
+        color: $default-text-color;
     }
 }
 
-.places {
-    list-style-type: none;
-}
-
 .payment-status {
+
+    display: block;
+    line-height: 30px;
 
     &::before {
         content: '';
         display: inline-block;
         width: 8px;
         height: 8px;
+        position: relative;
+        top: -2px;
+        margin-right: 4px;
         border-radius: 4px;
         background-color: #999;
     }
@@ -55,4 +84,22 @@ nav {
     &.payment-status-0:before { background-color: #EC4E27; }
     &.payment-status-1:before { background-color: #F6C744; }
     &.payment-status-2:before { background-color: #9BD851; }   
+ }
+
+ footer {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 40px 20px 0 20px;
+    padding: 40px 0;
+    border-top: 1px solid #ccc;
+
+    nav {
+        margin: 20px 0;
+        line-height: 250%;
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    }
  }
