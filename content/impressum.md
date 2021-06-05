@@ -6,4 +6,6 @@ menu: secondary
 noindex: true
 ---
 
-Lorem ipsum
+Diese Seite befindet sich im Aufbau.
+
+Email: [aaron@bremen-ohne-bargeld.de](mailto:aaron@bremen-ohne-bargeld.de)
