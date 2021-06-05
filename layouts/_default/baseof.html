@@ -5,6 +5,7 @@
   <title>{{ $title }}</title>
   <meta charset="utf-8">
   <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet">
+  <link rel="canonical" href="{{ .Permalink }}">
   {{ if .Params.noindex }}
   <meta name="robots" content="noindex"> 
   {{ end }}
