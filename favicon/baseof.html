@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="{{ .Site.LanguageCode }}"><head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#e35650">
+<link rel="shortcut icon" href="/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head><body>{{ $title := delimit (slice .Title "·" .Site.Title) " " }}
+  <title>{{ $title }}</title>
+  <meta charset="utf-8">
+  {{ $style := resources.Get "style.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ if .Params.noindex }}
+  <meta name="robots" content="noindex"> 
+  {{ end }}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <header>
+      <a class="logo" href="{{ .Site.BaseURL }}">
+        <img alt="Kreditkarte mit Speckflagge" src="{{ .Site.BaseURL }}/bremen-ohne-bargeld-logo.png">
+        <span class="site-title">{{ .Site.Title }}</span>
+      </a>
+      {{ partial "menu" . }}
+    </header>
+    <div class="page kind-{{ .Kind }}">
+    {{ block "main" . }}
+    {{ end }}
+    </div>
+    <footer>
+    {{ block "footer" . }}
+    {{ partial "secondary_menu" . }}
+    <div class="site-info">
+      <div class="last-update">Letzte Änderung: {{ now.Format "2006-01-02T15:04:05Z0700" }}</div>
+    </div>
+    {{ end }}
+    </footer>
+</body></html>
