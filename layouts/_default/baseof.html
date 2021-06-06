@@ -14,13 +14,16 @@
 </head>
 <body>
     <header>
-      <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+      <a class="logo" href="{{ .Site.BaseURL }}">
+        <img alt="Kreditkarte mit Speckflagge" src="{{ .Site.BaseURL }}/bremen-ohne-bargeld-logo.png">
+        <span class="site-title">{{ .Site.Title }}</span>
+      </a>
 
       {{ partial "menu" . }}
     </header>
 
     
-    <div class="page">
+    <div class="page kind-{{ .Kind }}">
     {{ block "main" . }}
 
     {{ end }}

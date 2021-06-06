@@ -13,15 +13,27 @@ body {
 
 header {
     text-align: center;
-    margin: 40px 20px;
+    margin: 20px;
     
-    .site-title {
-        padding: 20px;
+    .logo {
+        display: inline-block;
+        padding: 10px;
         font-size: 24px;
+
+        img, .site-title {
+            display: block;
+            margin: auto;
+        }
+
+        img {
+            width: 72px;
+            height: 72px;
+            margin-bottom: 12px;
+        }
     }
 
     nav {
-        margin: 20px 0;
+        margin: 10px 0;
         position: relative;
 
         ul {
@@ -63,13 +75,15 @@ a {
     color: $default-text-color;
     text-decoration: none;
 
+    transition: opacity 0.25s;
+
     &:hover {
         opacity: .7;
     }
 }
 
 .page {
-    margin: 40px auto;
+    margin: 20px auto;
     width: 100%;
     max-width: 800px;
     line-height: 1.5em;
@@ -84,6 +98,10 @@ a {
     a {
         text-decoration: underline;
         color: #39f;
+    }
+
+    &.kind-home {
+        text-align: center;
     }
 }
 
@@ -128,7 +146,6 @@ ul, li {
     font-size: 0.8rem;
     margin: 40px 20px 0 20px;
     padding: 40px 0;
-    border-top: 1px solid #ccc;
 
     nav {
         margin: 20px 0;
