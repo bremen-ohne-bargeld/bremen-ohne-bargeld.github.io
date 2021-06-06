@@ -28,9 +28,12 @@
 
     <footer>
     {{ block "footer" . }}
-      © {{ now.Year }} bremen-ohne-bargeld.de
+    {{ partial "secondary_menu" . }}
 
-      {{ partial "secondary_menu" . }}
+    <div class="site-info">
+      <div class="last-update">Letzte Änderung: {{ now.Format "2006-01-02T15:04:05Z0700" }}</div>
+    </div>
+
     {{ end }}
     </footer>
 
