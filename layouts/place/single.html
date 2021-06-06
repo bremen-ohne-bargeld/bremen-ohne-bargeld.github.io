@@ -2,11 +2,11 @@
   <h1>{{.Title}} in Bremen</h1>
 
   {{ if eq .Params.payment_status 0 }}
-  {{ .Scratch.Set "payment_status_title" "Hier kann leider nicht mit Karte bezahlt werden." }}
+  {{ .Scratch.Set "payment_status_title" "Hier kannst du leider nicht mit Karte zahlen." }}
   {{ else if eq .Params.payment_status 1 }}
-    {{ .Scratch.Set "payment_status_title" "Hier ist Kartenzahlung mit Einschränkungen möglich (Hinweise beachten)." }}
+    {{ .Scratch.Set "payment_status_title" "Hier ist Kartenzahlung mit Einschränkungen möglich. Bitte beachte die unten stehenden Hinweise." }}
   {{ else if eq .Params.payment_status 2 }}
-    {{ .Scratch.Set "payment_status_title" "Hier kann problemslos mit Karte bezahlt werden." }}
+    {{ .Scratch.Set "payment_status_title" "Hier kannst du problemslos mit Karte zahlen." }}
   {{ else }}
     {{ .Scratch.Set "payment_status_title" "Es liegen leider keine Informationen dazu vor, ob hier mit Karte bezahlt werden kann." }}
   {{ end }}
