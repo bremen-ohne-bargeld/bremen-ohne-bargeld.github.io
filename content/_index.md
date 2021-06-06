@@ -1,7 +1,7 @@
 ---
 title: Home
 draft: false
-description: Diese Seite hilft dir dabei, Orte in Bremen zu finden, an denen Kartenzahlung akzeptiert wird.
+description: Finde heraus, wo du in Bremen mit Karte bezahlen kannst.
 ---
 
 # Wo kann man in Bremen bargeldlos bezahlen?

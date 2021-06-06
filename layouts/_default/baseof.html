@@ -21,7 +21,7 @@
   {{ if .Description }}
     {{ $description = .Description }}
   {{ else if eq .Type "place" }}
-    {{ $description = (print "Hier kannst du sehen, ob du bei " .Title " in Bremen mit Karte zahlen kannst.") }}
+    {{ $description = (print "Finde heraus, ob du bei " .Title " in Bremen mit Karte zahlen kannst.") }}
   {{ end }}
 
   <meta name="description" content="{{ $description }}">
