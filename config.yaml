@@ -1,5 +1,6 @@
 baseURL: https://bremen-ohne-bargeld.de/
 languageCode: de-de
 title: Bremen ohne Bargeld
+enableGitInfo: true
 params:
   google_maps_api_key: AIzaSyB0yffafVx4X1L_YHC-w0D1VbvhP8or9cg
