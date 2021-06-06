@@ -1,6 +1,5 @@
 ---
 title: Indian Curry House
-last_updated: 2021-06-05T14:45:26+02:00
 type: place
 place_id: ChIJke97Qv0nsUcRthxvoBbZJbo
 payment_status: 1

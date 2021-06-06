@@ -1,6 +1,5 @@
 ---
 title: "Über dieses Projekt"
-date: 2021-05-26T20:29:51+02:00
 draft: false
 menu: secondary
 weight: 20
