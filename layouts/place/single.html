@@ -1,0 +1,31 @@
+{{ define "main" }}
+  <h1>{{.Title}} in Bremen</h1>
+
+  {{ if eq .Params.payment_status 0 }}
+  {{ .Scratch.Set "payment_status_title" "Hier kann leider nicht mit Karte bezahlt werden." }}
+  {{ else if eq .Params.payment_status 1 }}
+    {{ .Scratch.Set "payment_status_title" "Hier kann möglicherweise mit Karte bezahlt werden (Hinweise beachten)." }}
+  {{ else if eq .Params.payment_status 2 }}
+    {{ .Scratch.Set "payment_status_title" "Hier kann problemslos mit Karte bezahlt werden." }}
+  {{ else }}
+    {{ .Scratch.Set "payment_status_title" "Unbekannter Status" }}
+  {{ end }}
+
+  <div class="payment-status-text payment-status-{{ .Params.payment_status }}">
+    {{ .Scratch.Get "payment_status_title" }}
+  </div>
+
+  {{ if .Content }}
+  
+    <h2>Hinweise</h2>
+    {{.Content}}
+
+  {{ end }}
+
+  {{ if .Params.place_id }}
+    <div class="google-link-container">
+      <a target="_blank" href="https://www.google.com/maps/place/?q=place_id:{{ .Params.place_id }}">Bei Google anzeigen</a>
+    </div>
+  {{ end }}
+
+{{ end }}
