@@ -3,4 +3,5 @@ languageCode: de-de
 title: Bremen ohne Bargeld
 enableGitInfo: true
 params:
+  claim: Wo kann man in Bremen bargeldlos bezahlen?
   google_maps_api_key: AIzaSyB0yffafVx4X1L_YHC-w0D1VbvhP8or9cg

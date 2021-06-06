@@ -1,8 +1,13 @@
 <!doctype html>
 <html lang="{{ .Site.LanguageCode }}">
 <head>
+  
   {{ $title := delimit (slice .Title "&middot;" .Site.Title) " " }}
+  {{ if eq .Kind "home" }}
+  {{ $title =  delimit (slice .Site.Title .Site.Params.Claim) " – " }}
+  {{ end }}
   <title>{{ $title }}</title>
+
   <meta charset="utf-8">
   {{ $style := resources.Get "style.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
@@ -11,7 +16,21 @@
   <meta name="robots" content="noindex"> 
   {{ end }}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {{ $description := "" }}
+  {{ if .Description }}
+    {{ $description = .Description }}
+  {{ else if eq .Type "place" }}
+    {{ $description = (print "Hier kannst du sehen, ob du bei " .Title " in Bremen mit Karte zahlen kannst.") }}
+  {{ end }}
+
+  <meta name="description" content="{{ $description }}">
   {{ .Site.Data.faviconData.favicon.html_code | safeHTML }}
+
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:description" content="{{ $description }}">
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:image" content="{{ .Site.BaseURL }}/bremen-ohne-bargeld-logo_large.png">
 </head>
 <body>
     <header>
