@@ -1,6 +1,7 @@
 ---
 title: ART 'N' CARD
 last_updated: 2021-05-26T21:30:20+02:00
+type: place
 place_id: ChIJ0zqa8QcosUcRNXkTZTDp6-w
 payment_status: 2
 ---
