@@ -30,4 +30,10 @@
     </div>
   {{ end }}
 
+  <div class="last-update">
+    <p>Dieser Eintrag wurde zuletzt am {{ .Lastmod.Format "02.01.2006" }} aktualisiert.</p>
+    <p>Stimmt etwas nicht? <a href="{{ with .Site.GetPage "page" "fehler_melden" }}{{ .RelPermalink }}{{ end }}">
+      Hier erfährst du, wie du fehlerhafte Einträge melden kannst.</a></p>
+  </div>
+
 {{ end }}
