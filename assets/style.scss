@@ -136,6 +136,10 @@ ul, li {
         background-color: #999;
     }
 
+    &.payment-status-0 {
+        text-decoration: line-through;
+    }
+
     &.payment-status-0:before { background-color: #EC4E27; }
     &.payment-status-1:before { background-color: #F6C744; }
     &.payment-status-2:before { background-color: #9BD851; }   
