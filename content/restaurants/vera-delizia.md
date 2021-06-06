@@ -2,7 +2,7 @@
 title: Vera Delizia
 last_updated: 2021-05-26T21:28:34+02:00
 type: place
-place_id: ChIJ5Uk6E_0nsUcR9xR1YtalGnA
+place_id: ChIJXa_j7QcosUcRe9jjiOldg88
 payment_status: 1
 ---
 
