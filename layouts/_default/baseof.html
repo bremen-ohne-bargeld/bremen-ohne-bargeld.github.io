@@ -7,6 +7,7 @@
   {{ $title =  delimit (slice .Site.Title .Site.Params.Claim) " – " }}
   {{ end }}
   <title>{{ $title }}</title>
+  <meta name=apple-mobile-web-app-title content="{{ .Site.Params.short_title }}">
 
   <meta charset="utf-8">
   {{ $style := resources.Get "style.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
