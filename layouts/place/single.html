@@ -8,7 +8,7 @@
   {{ else if eq .Params.payment_status 2 }}
     {{ .Scratch.Set "payment_status_title" "Hier kann problemslos mit Karte bezahlt werden." }}
   {{ else }}
-    {{ .Scratch.Set "payment_status_title" "Unbekannter Status" }}
+    {{ .Scratch.Set "payment_status_title" "Es liegen leider keine Informationen dazu vor, ob hier mit Karte bezahlt werden kann." }}
   {{ end }}
 
   <div class="payment-status-text payment-status-{{ .Params.payment_status }}">
