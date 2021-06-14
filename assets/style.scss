@@ -95,6 +95,10 @@ a {
         line-height: 120%;
     }
 
+    h2 {
+        margin-top: 40px;
+    }
+
     a {
         text-decoration: underline;
         color: #39f;
@@ -102,6 +106,10 @@ a {
 
     &.kind-home {
         text-align: center;
+
+        h2 {
+            margin-top: 80px;
+        }
     }
 }
 
