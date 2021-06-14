@@ -9,3 +9,7 @@ description: Finde heraus, wo du in Bremen mit Karte bezahlen kannst.
 Diese Seite hilft dir dabei, Orte in Bremen zu finden, an denen Kartenzahlung akzeptiert wird.
 
 Bitte beachte, dass sich diese Seite noch im Aufbau befindet.
+
+## Zuletzt hinzugefügt
+
+{{< recent >}}
