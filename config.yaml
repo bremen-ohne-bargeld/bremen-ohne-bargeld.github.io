@@ -1,7 +1,6 @@
 baseURL: https://bremen-ohne-bargeld.de/
 languageCode: de-de
 title: Bremen ohne Bargeld
-enableGitInfo: true
 params:
   short_title: Ohne Bargeld
   claim: Wo kann man in Bremen bargeldlos bezahlen?
