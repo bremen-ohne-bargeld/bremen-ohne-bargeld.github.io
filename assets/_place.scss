@@ -9,8 +9,6 @@
     padding: 10px 20px;
     border-radius: 5px;
     margin: 20px 0;
-    
-    &.payment-status-0 { background-color: #f0a795; }
-    &.payment-status-1 { background-color: #f5de9e; }
-    &.payment-status-2 { background-color: #c2dba3; }   
+
+    @include payment-status-background-color;
 }

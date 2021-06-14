@@ -1,0 +1,40 @@
+.recent-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    margin: auto;
+
+    // force to two rows on small screens
+    width: 280px;
+    @media (min-width: 640px) {
+        width: 100%;
+    }
+
+    .item {
+        font-weight: bold;
+        width: 120px;
+        height: 120px;
+        border-radius: 8px;;
+        position: relative;
+        margin: 10px;
+
+        @include payment-status-background-color;
+        @include drop-shadow;
+        
+        a {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-decoration: none;
+            color: $default-text-color;
+        }
+
+        .title {
+            margin: auto;
+        }
+    }
+}

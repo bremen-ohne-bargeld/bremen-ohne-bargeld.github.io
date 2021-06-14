@@ -1,8 +1,10 @@
+$default-text-color: #222;
+
 @import "normalize";
+@import "mixins";
 @import "sticky-footer";
 @import "place";
-
-$default-text-color: #222;
+@import "recent";
 
 body {
     font-family: system-ui;
