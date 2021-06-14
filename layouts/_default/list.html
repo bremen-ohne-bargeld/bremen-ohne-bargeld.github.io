@@ -3,7 +3,7 @@
 
 
 <ul class="places">
-  {{ range .Pages }}
+  {{ range .Pages.ByTitle }}
         
         {{ if eq .Params.payment_status 0 }}
           {{ .Scratch.Set "payment_status_title" "Hier kann leider nicht mit Karte bezahlt werden." }}
