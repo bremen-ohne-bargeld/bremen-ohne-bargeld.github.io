@@ -1,0 +1,9 @@
+<div class="recent-items">
+    {{ range first 4 (where ( where .Site.RegularPages "Type" "place" ) "Params.payment_status" ">" 0) }}
+        <div class="item payment-status-{{ .Params.payment_status }}">
+            <a href="{{ .Permalink }}">
+                <span class="title">{{ .Title }}</span>
+            </a>
+        </div>
+    {{ end }}
+</div>
