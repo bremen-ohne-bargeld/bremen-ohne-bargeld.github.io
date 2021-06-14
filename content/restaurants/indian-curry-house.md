@@ -1,5 +1,7 @@
 ---
 title: Indian Curry House
+date: 2021-06-06T19:02:02+02:00
+lastmod: 2021-06-06T19:02:02+02:00
 type: place
 place_id: ChIJke97Qv0nsUcRthxvoBbZJbo
 payment_status: 1
