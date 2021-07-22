@@ -1,10 +1,10 @@
 ---
 title: Davvero
 date: 2021-06-06T19:02:02+02:00
-lastmod: 2021-06-06T19:02:02+02:00
+lastmod: 2021-07-22T21:55:39+02:00
 type: place
 place_id: ChIJ5Uk6E_0nsUcR9xR1YtalGnA
-payment_status: 0
+payment_status: 1
 ---
 
-Kartenzahlung soll laut Aussage der Bedienung bald wieder möglich sein. War vorübergehend wegen des Corona-Lockdown deaktiviert worden, um Kosten zu sparen.
+Kartenzahlung erst ab 10 €.
