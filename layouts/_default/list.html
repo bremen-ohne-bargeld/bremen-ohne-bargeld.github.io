@@ -10,7 +10,7 @@
         {{ else if eq .Params.payment_status 1 }}
           {{ .Scratch.Set "payment_status_title" "Hier kann möglicherweise mit Karte bezahlt werden (Einschränkungen beachten)." }}
         {{ else if eq .Params.payment_status 2 }}
-          {{ .Scratch.Set "payment_status_title" "Hier kann problemslos mit Karte bezahlt werden." }}
+          {{ .Scratch.Set "payment_status_title" "Hier kann problemlos mit Karte bezahlt werden." }}
         {{ else }}
           {{ .Scratch.Set "payment_status_title" "Unbekannter Status" }}
         {{ end }}

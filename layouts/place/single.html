@@ -6,7 +6,7 @@
   {{ else if eq .Params.payment_status 1 }}
     {{ .Scratch.Set "payment_status_title" "Hier ist Kartenzahlung mit Einschränkungen möglich. Bitte beachte die unten stehenden Hinweise." }}
   {{ else if eq .Params.payment_status 2 }}
-    {{ .Scratch.Set "payment_status_title" "Hier kannst du problemslos mit Karte zahlen." }}
+    {{ .Scratch.Set "payment_status_title" "Hier kannst du problemlos mit Karte zahlen." }}
   {{ else }}
     {{ .Scratch.Set "payment_status_title" "Es liegen leider keine Informationen dazu vor, ob hier mit Karte bezahlt werden kann." }}
   {{ end }}
