@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{ .Site.LanguageCode }}">
 <head>
+  {{ partial "cookie-consent" . }}
   
   {{ $title := delimit (slice .Title "&middot;" .Site.Title) " " }}
   {{ if eq .Kind "home" }}
@@ -32,6 +33,8 @@
   <meta property="og:description" content="{{ $description }}">
   <meta property="og:title" content="{{ $title }}">
   <meta property="og:image" content="{{ .Site.BaseURL }}bremen-ohne-bargeld-logo_opengraph.png">
+
+  {{ partial "analytics" . }}
 </head>
 <body>
     <header>
