@@ -36,6 +36,8 @@ GitHub hat Compliance-Maßnahmen für internationale Datenübermittlungen umgese
 ](https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-data-protection-addendum#attachment-1–the-standard-contractual-clauses-processors
 )
 
+<!--
+
 ## Google Analytics
 
 Soweit Sie Ihre Einwilligung erklärt haben, wird auf dieser Website Google Analytics eingesetzt, ein Webanalysedienst der Google LLC. Zuständiger Dienstanbieter in der EU ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland („Google“).
@@ -89,3 +91,5 @@ Sie können die Speicherung von Cookies auch durch eine entsprechende Einstellun
 Rechtsgrundlage und Widerrufsmöglichkeit für diese Datenverarbeitung ist Ihre Einwilligung, Art.6 Abs.1 S.1 lit.a DSGVO. Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, indem Sie die {{< cookie-settings label="Cookie-Einstellungen aufrufen" >}} und dort Ihre Auswahl ändern.
 
 Nähere Informationen zu Nutzungsbedingungen von Google Analytics und zum Datenschutz bei Google finden Sie unter https://marketingplatform.google.com/about/analytics/terms/de/ und unter https://policies.google.com/?hl=de.
+
+-->
