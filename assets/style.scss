@@ -12,6 +12,36 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     color: $default-text-color;
+
+    /* leave room for banner */
+    padding-top: 35px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 60px; /* account for 2nd for on mobile */
+    }
+
+}
+
+#banner {
+    position: fixed;
+    background-color: #E26661;
+    color: #fff;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 25px;
+    padding: 5px;
+    text-align: center;
+    z-index: 1;
+
+    a {
+        color: #fff;
+        text-decoration: underline;
+        white-space: nowrap;
+    }
 }
 
 header {
